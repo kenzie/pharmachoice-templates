@@ -1,0 +1,32 @@
+/**********************************************************
+
+	PharmaChoice, Home Styles
+	April 2010
+	kenzie@famousfolks.ca
+
+**********************************************************/
+
+
+/* =News **********************************************/
+
+.news { border: 1px solid #eee; margin: 0 auto; overflow: hidden; position: relative; width: 952px; }
+.news h3 { background: #ed174f url(../images/news-h3-gradient.png) repeat-x bottom left; color: #fff; float: left; font-size: 1.8em; font-style: italic; font-weight: normal; padding: 3px 0; text-align: center; width: 226px; }
+.news p { float: left; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 1.4em; padding: 5px 0; margin: 0 0 0 20px; width: 575px; }
+.news p a { text-decoration: none; }
+.news p a span { bottom: 0; color: #0067b1; position: absolute; padding: 5px 20px; right: 0; text-decoration: underline; }
+.news p a:hover span, .news p a:focus span, .news p a:active span { color: #ed174f; }
+
+/* CSS3 */
+.news {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.news h3 {
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}

@@ -1,0 +1,205 @@
+/**********************************************************
+
+	PharmaChoice, Common Styles
+	April 2010
+	kenzie@famousfolks.ca
+
+**********************************************************/
+
+
+/* =Defaults *********************************************/
+
+* { margin: 0; padding: 0; }
+
+a img { border: 0; }
+a:link { color: #555; }
+a:visited { color: #555; }
+a:hover, a:focus, a:active { color: #ed174f; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Gill Sans", "Trebuchet MS", Calibri, sans-serif; }
+
+
+/* =Layout ***********************************************/
+
+html { background: #fff; color: #555; }
+body { background: #fff url(../images/body-bg.jpg) no-repeat 50% 0; color: #555; font-family: "Gill Sans", Calibri, "Trebuchet MS", sans-serif ; font-size: 62.5%; min-width: 955px; padding-bottom: 30px; }
+.shortcuts { float: left; margin-left: -900em; }
+.header, .nav, .content, .promos, .footer, .siteinfo { margin: 0 auto; position: relative; width: 950px; }
+
+
+/* =Header ***********************************************/
+
+.header { padding-top: 4em; }
+
+.header h1 { color: #0067b1; font-size: 2.5em; font-weight: normal; padding: 25px 0 5px 0; text-transform: uppercase; }
+.header h1 a { color: #0067b1; text-decoration: none; }
+.header h1 a:hover, .header h1 a:focus, .header h1 a:active { color: #ed174f; }
+.header h1 img { padding-top: .4em; vertical-align: middle; }
+.header div { position: absolute; top: 5em; right: 0; }
+
+.header .links { position: absolute; right: 0; top: 1.2em; }
+.header .links li { border-left: 1px solid #555; float: left; font-size: 1.2em; list-style: none; padding: 0 0 0 6px; }
+.header .links li:first-child { border: none; }
+.header .links li a { margin-right: 6px; }
+.header .links li:last-child a { margin: 0; }
+
+.header .location { left: 0; position: absolute; top: 1.2em; }
+.header .location li { border-left: 1px solid #555; float: left; font-size: 1.2em; list-style: none; padding: 0 6px 0 0; }
+.header .location li:first-child { border: none; }
+.header .location li a { margin-left: 6px; }
+
+
+/* =Navigation *******************************************/
+
+.nav { list-style: none; margin-bottom: -2px; overflow: hidden; z-index: 100; }
+* html .nav { padding-left: 25px; } /* IE6 fix */
+.nav li { border: 2px solid #e6e6e6; border-bottom: 0; float: left; margin: 0 1px; }
+.nav li:first-child { margin-left: 25px; }
+.nav li a { background: #fff url(../images/nav-bg-gradient.png) repeat-x bottom left; display: block; font-size: 1.8em; padding: 10px 18px; text-decoration: none; text-shadow: #fff 0 1px 1px; }
+.nav li.current a { background: #fff; color: #0067b1; text-shadow: #e6e6e6 0 1px 1px; }
+.nav li a:hover, .nav li a:focus, .nav li a:active { background-image: none; }
+
+/* CSS3 */
+.nav li {
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+
+
+/* =Content **********************************************/
+
+.content { background: url(../images/content-gradient.png) repeat-x bottom left; border: 2px solid #e6e6e6; margin-bottom: 2em; padding: 40px; overflow: hidden; width: 870px; z-index: 0; }
+
+/* CSS3 */
+.content {
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.feature { overflow: hidden; }
+.feature.heading { margin-bottom: 40px; }
+.feature img { background: #eee; float: left; width: 544px; }
+.feature h2 { float: right; font-size: 3.6em; font-weight: normal; line-height: 1.0; margin: 0 0 .25em 0; width: 266px; }
+.feature p { float: right; font-size: 1.4em; line-height: 1.5; width: 266px; }
+
+.article { float: left; width: 565px; }
+.article h2 { color: #0067b1; font-size: 4.8em; font-weight: normal; }
+.article h3 { font-size: 1.8em; font-weight: normal; text-transform: uppercase; }
+.article h2 img, .article h3 img { padding-right: 5px; vertical-align: middle; }
+
+.aside { background: url(../images/divider-vertical.gif) no-repeat 0 0; float: right; padding-left: 15px; width: 266px; }
+.aside h3 { font-size: 1.8em; font-style: italic; font-weight: normal; }
+.aside .categories { font-size: 1.8em; line-height: 1.4; list-style: none; margin: 1em 0; }
+.aside .categories a { text-decoration: none; color: #0067b1; }
+.aside .categories a:hover, .aside .categories a:focus, .aside .categories a:active { color: #ed174f; }
+.aside .categories .current a { color: #555; }
+
+ul.featured { list-style: none; margin: 2em 0 0 0; overflow: hidden; }
+ul.featured li { background: url(../images/content-gradient.png) repeat-x bottom left; border: 2px solid #e6e6e6; float: left; height: 150px; margin: 0 8px 8px 0; overflow: hidden; width: 266px; }
+
+/* CSS3 */
+ul.featured li, ul.featured li img {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+ul.products { list-style: none; margin: 75px 0 0 0; overflow: hidden; width: 546px; }
+ul.products li { margin: 2em 0 4em 0; position: relative; }
+ul.products li em { font-size: 1.4em; font-style: italic; font-weight: normal; margin-left: 160px; }
+ul.products li span { display: block; height: 125px; left: 0; overflow: hidden; position: absolute; text-align: center; top: 0; width: 125px; }
+ul.products li h3 { color: #0067b1; font-size: 2em; font-weight: normal; margin-left: 160px; text-transform: none; }
+ul.products li p { font-size: 1.4em; margin: 1em 0 0 160px; }
+ul.products li strong { font-size: 1.4em; font-weight: normal; font-style: italic; line-height: 1.8; margin: 0 0 1em 160px; }
+
+ul.browse { font-size: 1.8em; list-style: none; margin: 2em 0 5em 160px; }
+ul.browse li { float: left; margin-right: 15px; }
+ul.browse li.prev { border-right: 1px solid #555; padding-right: 16px; }
+ul.browse li a { color: #0067b1; text-decoration: none; }
+ul.browse li a:hover, ul.browse li a:focus, ul.browse li a:active { color: #ed174f; }
+
+.advice { background: #8ac33e url(../images/advice-bg.jpg) repeat-x bottom left; margin: 4em 0; border: 1px solid #bbb; color: #fff; position: relative; }
+.advice h4 { font-size: 2.4em; font-weight: normal;  font-style: italic; line-height: 1; margin: 10px; }
+.advice p { font-size: 1.4em; line-height: 1.3; margin: 1em 10px 1em 10px; }
+.advice p a { color: #fff; }
+.advice p a:hover, .advice p a:focus, .advice p a:active { color: #ed174f; }
+.advice .photo { bottom: 0; position: absolute; right: 0; }
+.advice ul { color: #0067b1; font-size: 1.2em; list-style: none; line-height: 1.5; margin: 2em 10px 70px 10px; }
+.advice ul li a { color: #0067b1; }
+.advice ul li a:hover, .advice ul li a:focus, .advice ul li a:active { color: #ed174f; }
+
+/* CSS3 */
+.advice {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+/* =Promos ***********************************************/
+
+.promos { height: 154px; list-style: none; margin: 20px auto; overflow: hidden; width: 955px; }
+.promos li { background: url(../images/content-gradient.png) repeat-x bottom left; border: 2px solid #e6e6e6; float: left; height: 150px; margin-left: 13px; overflow: hidden; width: 225px; white-space: nowrap; }
+.promos li:first-child { margin-left: 0; }
+
+/* CSS3 */
+.promos li, .promos li img {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+/* =Footer ***********************************************/
+
+.footer { background: url(../images/footer-bg.png) no-repeat bottom center; border: 2px solid #e6e6e6; margin-bottom: 2em; padding: 40px 40px 120px 40px; overflow: hidden; width: 870px; z-index: 0; }
+
+/* CSS3 */
+.footer {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.footer h3 { color: #0067b1; font-size: 1.4em; font-weight: normal; padding: 0 0 5px 0; text-transform: uppercase; }
+.footer h3 img { padding-top: .4em; vertical-align: middle; }
+
+.footer div { float: left; margin-right: 15px; }
+.footer div h4 { font-size: 1.2em; font-weight: normal; margin-bottom: 1em; text-transform: uppercase; }
+.footer div p, .footer div ul, .footer div dl { font-size: 1.2em; margin: 1em 0; line-height: 1.4; list-style: none; }
+
+.footer .photos img, .footer .pharmacist img { border: 4px solid #fff; }
+.footer .photos p { margin: 0 0 1em 0; }
+.footer .contact { width: 148px; }
+.footer .hours { width: 225px; }
+.footer .hours table { font-size: 1.2em; }
+.footer .hours table th { font-weight: normal; padding-right: 10px; text-align: left; vertical-align: top; width: 50%; }
+.footer .hours table td { vertical-align: bottom; }
+.footer .pharmacist { background: url(../images/divider-vertical.gif) no-repeat 0 0; margin-right: 0; height: 240px; padding-left: 15px; width: 282px; }
+.footer .pharmacist h4 { color: #0067b1; font-size: 2.1em; font-style: italic; text-transform: none; }
+.footer .pharmacist img { float: left; margin: 0 10px 10px 0; }
+.footer .pharmacist h5 { font-size: 1.8em; font-weight: normal; }
+.footer .pharmacist h6 { font-size: 1.2em; font-weight: normal; }
+
+.footer a:link, .footer span { color: #0067b1; }
+.footer a:visited { color: #0067b1; }
+.footer a:hover, .footer a:focus, .footer a:active { color: #ed174f; }
+
+
+/* =Siteinfo *********************************************/
+
+.siteinfo ul { clear: both; font-size: 1.2em; list-style: none; margin-bottom: .5em; overflow: hidden; }
+.siteinfo ul li { border-right: 1px solid #ccc; float: left; margin-right: 5px; padding-right: 5px; }
+.siteinfo ul li:last-child { border: none; }
+.siteinfo ul + ul { font-size: 1.1em; }
+
